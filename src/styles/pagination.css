@@ -1,0 +1,45 @@
+.pagination {
+  display: inline-block;
+}
+
+.pagination span {
+  color: #333;
+  float: left;
+  padding: 4px 11px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  border-radius: 25px;
+}
+
+.pagination span.active__page {
+  background-color: #df2020;
+  color: white;
+  border: 1px solid #df2020;
+}
+
+.pagination span:hover:not(.active__page) {
+  background-color: #f1f1f1;
+}
+
+.pagination .prev,
+.pagination .next {
+  font-weight: bold;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.product-card-page{
+  width: 100%;
+  padding: 0 110px ;
+}
+
+.category-product__page{
+  font-weight: 600;
+}

@@ -1,0 +1,65 @@
+.booking-header {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.booking-header h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    align-items: center;
+    padding: 23px 0;
+}
+
+.booking-header h5 {
+    color: #ffffffd4;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    align-items: center;
+    padding: 23px 0;
+}
+
+
+.booking-header i {
+    color: #ffffffab;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.booking-header span {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    word-wrap: none;
+}
+
+.booking-header .button-booking__header {
+    width: 12%;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    border-radius: 25px;
+    background-color: #e4002b;
+}
+
+.booking-header .button-booking__change {
+    width: 8%;
+    padding: 3px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    border-radius: 25px;
+    background-color: #212121;
+}

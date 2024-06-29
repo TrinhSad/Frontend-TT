@@ -1,0 +1,117 @@
+.purchase-list__item {
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+    /* margin-right: 200px; */
+}
+
+.booking__login-url {
+    margin-top: 2rem;
+}
+
+.purchase-list__item .purchase-list-card {
+    margin-top: 2rem;
+    margin-right: 300px;
+}
+
+.purchase-list__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.purchase-list-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.purchase__list-name {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: rgba(3, 18, 26, 0.15) 0px 2px 5px;
+}
+
+.purchase__booking-id {
+    background-color: rgb(236, 248, 255);
+    padding: 13px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: rgb(104, 113, 118);
+}
+
+.purchase__booking-id span {
+    font-weight: 700;
+    color: rgb(90, 98, 103);
+}
+
+.purchase__tourName {
+    background-color: rgb(207, 235, 252);
+    padding: 13px;
+    color: #212121;
+    font-weight: 600;
+    font-size: .95rem;
+    box-shadow: rgba(3, 18, 26, 0.15) 0px 2px 5px;
+}
+
+.purchase__tourName span {
+    margin-right: 8px;
+    color: rgb(90, 98, 103);
+    font-size: .9rem;
+}
+
+.purchase__tourName i {
+    margin-right: 8px;
+    color: red;
+}
+
+.purchase__product {
+    background-color: #21212115;
+    padding: 13px 13px 0px 13px;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #212121d7;
+    box-shadow: rgba(3, 18, 26, 0.15) 0px 2px 5px;
+}
+
+.purchase__payment-status {
+    background-color: rgb(236, 248, 255);
+    padding: 13px 13px 0px 13px;
+}
+
+.purchase__payment-status p {
+    width: 220px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(0, 124, 232);
+    padding: 2px 6px 2px 6px;
+    border-radius: 15px;
+}
+
+.purchase-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.purchase__totalAmount {
+    padding: 13px;
+    margin-bottom: 5px;
+    font-size: .95rem;
+    font-weight: 700;
+}
+
+.purchase-details {
+    color: blue;
+    border: none;
+    font-size: .9rem;
+    font-weight: 700;
+    margin-right: 15px;
+    text-decoration: 1.2px underline;
+    margin-top: 155px;
+}

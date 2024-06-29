@@ -1,0 +1,44 @@
+.menu-edit {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 350px;
+}
+
+.menu-left {
+    height: 100%;
+    width: 80%;
+    background-color: #212121;
+    margin-left: 160px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item .logo {
+    width: 80px;
+    height: auto;
+    margin: 20px 20px 0 20px;
+}
+
+.menu-item h4 {
+    padding: 0 0 15px 40px;
+}
+
+.menu-item p {
+    padding: 2rem 0 10px 40px;
+    font-size: .85rem;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-left h4 {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #ffffff93;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu-left h4:hover {
+    color: #fff;
+}

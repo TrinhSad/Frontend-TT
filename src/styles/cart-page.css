@@ -1,0 +1,141 @@
+th {
+  text-align: center;
+}
+
+.cart__img-box {
+  width: 120px;
+}
+
+.cart__img-box img {
+  width: 100%;
+}
+
+.cart__item-del i {
+  cursor: pointer;
+}
+
+.cart-page h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cart__total h6 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cart__total span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.cart__total p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cart__page-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2rem 0;
+}
+
+.cart__page-btn button a:hover {
+  color: #fff;
+}
+
+.cart__subtotal {
+  color: #df2020;
+  font-size: 1.5rem;
+}
+
+.table-borderless tr {
+  border-radius: 5px;
+  border: 1px solid #dee2e66b;
+  box-shadow: 0 5px 15px #21212120;
+}
+
+.addTOCart__btn {
+  border: none;
+  padding: 10px 25px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  border: 1px solid #2121211a;
+  box-shadow: 0 5px 15px #e4002a6a;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.addTOCart__btn:hover {
+  background: rgb(56, 55, 55);
+}
+
+.header-categories {
+  position: relative;
+  color: black;
+  font-weight: 700;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.category-item {
+  margin-right: 20px;
+  padding: 5px 17px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #21212179;
+  /* background-color: #df202047; */
+  border-bottom: 2px solid #df202010;
+  /* border-right: 2px solid #df202010; */
+}
+
+.category-item:hover {
+  /* background-color: #df2020; */
+  color: #333;
+  padding: 3px 17px;
+  border-bottom: 4px solid #df2020;
+}
+
+tr td {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.quantity-btn{
+  background: #df2020;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.quantity-btn:hover{
+  background: #212121;
+}
+
+.quantity-btn[disabled] {
+  background-color: #ccc; 
+  color: #666; 
+  cursor: not-allowed; 
+}
+
+@media only screen and (max-width: 768px) {
+
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+}

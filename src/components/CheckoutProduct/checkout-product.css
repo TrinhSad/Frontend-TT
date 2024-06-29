@@ -1,0 +1,54 @@
+.list-product p {
+    color: #212121;
+    margin-bottom: 16px;
+}
+
+.booking-discount__bottom h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1.2rem;
+    margin-top: 35px;
+}
+
+.discount-item {
+    display: flex; 
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1.2px solid #dee2e689;
+    box-shadow: 0px 1px 1px 1px rgba(11, 153, 230, 0.373);
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.discount-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.discount-details span {
+    font-size: 14px;
+    color: #212121d2;
+}
+
+.discount-code{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.discount-code .code{
+    word-wrap: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    background-color: rgba(201, 249, 9, 0.284);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.discount-amount {
+    font-size: 16px;
+    margin: 5px 5px 5px 0px;
+}
