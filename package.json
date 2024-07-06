@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -54,6 +54,7 @@
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.6",
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.1.1"
   },
   "homepage": "https://trinhsad.github.io/FE---FastFood/"
