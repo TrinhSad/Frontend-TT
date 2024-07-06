@@ -53,7 +53,7 @@ const Order = () => {
     products: getCartProducts(),
   });
 
-  console.log("order:", order);
+  // console.log("order:", order);
 
   useEffect(() => {
     if (accessToken) {
@@ -109,7 +109,7 @@ const Order = () => {
           order,
           {
             headers: {
-              Authorization: `Bearer ${accessToken}`,
+              Authorization: `Bearer ${accessToken} || ""`,
             },
           }
         );
@@ -226,7 +226,7 @@ const Order = () => {
                 <FormGroup>
                   <input
                     type="text"
-                    placeholder="Mã giảm giá*"
+                    placeholder="Mã giảm giá (nếu có)"
                     id="voucherCode"
                     required
                     onChange={handleChange}

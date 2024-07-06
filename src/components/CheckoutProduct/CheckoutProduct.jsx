@@ -3,6 +3,7 @@ import { ListGroup, ListGroupItem, Row, Col } from "reactstrap";
 import Cookies from 'js-cookie';
 import axios from "axios";
 import "./checkout-product.css";
+import { BASE_URL } from "../../utils/config";
 
 const CheckoutProduct = () => {
     const VND = new Intl.NumberFormat("vi-VN", {
@@ -36,7 +37,7 @@ const CheckoutProduct = () => {
     // Define fetchDiscounts outside of useEffect
     const fetchDiscounts = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/api/v1/discount/get-all-discounts');
+            const response = await axios.get(`${BASE_URL}/discount/get-all-discounts`);
             if (!response.data || !Array.isArray(response.data)) {
                 throw new Error('Invalid data format');
             }

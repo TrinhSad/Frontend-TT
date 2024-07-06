@@ -83,7 +83,7 @@ const ChangePassword = () => {
                             <Form>
                                 <FormGroup className="login__input">
                                     <input
-                                        type={showPassword ? "text" : "password"}
+                                        type={showPassword.currentPassword ? "text" : "password"}
                                         id="currentPassword"
                                         name="password"
                                         value={credentials.currentPassword}
@@ -91,13 +91,13 @@ const ChangePassword = () => {
                                         required
                                     />
                                     <Label className="input__place" for="password">Mật khẩu hiện tại <span>*</span></Label>
-                                    <span className="d-flex show-password"  onClick={() => togglePasswordVisibility('currentPassword')}>
+                                    <span className="d-flex show-password" onClick={() => togglePasswordVisibility('currentPassword')}>
                                         {showPassword.currentPassword ? <FaEyeSlash /> : <FaEye />}
                                     </span>
                                 </FormGroup>
                                 <FormGroup className="login__input">
                                     <input
-                                        type={showPassword ? "text" : "password"}
+                                        type={showPassword.newPassword ? "text" : "password"}
                                         id="newPassword"
                                         name="password"
                                         value={credentials.newPassword}
@@ -111,21 +111,20 @@ const ChangePassword = () => {
                                 </FormGroup>
                                 <FormGroup className="login__input">
                                     <input
-                                        type={showPassword ? "text" : "password"}
+                                        type={showPassword.confirmPassword ? "text" : "password"}
                                         id="confirmPassword"
                                         name="password"
                                         value={credentials.confirmPassword}
                                         onChange={handleChange}
                                         required
                                     />
-                                    <Label className="input__place" for="password"> Xác nhận Mật khẩu <span>*</span></Label>
+                                    <Label className="input__place" for="password">Xác nhận Mật khẩu <span>*</span></Label>
                                     <span className="d-flex show-password" onClick={() => togglePasswordVisibility('confirmPassword')}>
                                         {showPassword.confirmPassword ? <FaEyeSlash /> : <FaEye />}
                                     </span>
                                 </FormGroup>
                                 <Button className="button__register" onClick={handleSubmit}>Đổi mật khẩu</Button>
                             </Form>
-
                         </div>
                     </div>
                 </Col>

@@ -30,7 +30,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +53,8 @@
     ]
   },
   "devDependencies": {
-    "@types/js-cookie": "^3.0.6"
-  }
+    "@types/js-cookie": "^3.0.6",
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "https://trinhsad.github.io/FE---FastFood/"
 }

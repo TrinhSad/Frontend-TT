@@ -49,7 +49,7 @@ const Login = () => {
             if (res.status === 400) {
                 setErrorMessage("Một lỗi đã xảy ra.");
             } else {
-                setErrorMessage("Wrong username or password. Please try again.");
+                setErrorMessage("Sai tên tài khoản hoặc mật khẩu. Vui lòng thử lại.");
             }
             console.error("Login error:", res);
         }

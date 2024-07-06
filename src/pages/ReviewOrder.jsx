@@ -48,7 +48,6 @@ const ReviewOrder = () => {
         fetchTransactions();
     }, []);
 
-
     const handleViewDetail = async (orderId) => {
         try {
             const res = await axios.post(`${BASE_URL}/checkout/create-checkout/${orderId}`);
@@ -58,6 +57,19 @@ const ReviewOrder = () => {
             }
         } catch (error) {
             console.error("Error initiating checkout:", error);
+        }
+    };
+
+    const getPaymentStatusLabel = (status) => {
+        switch (status) {
+            case 'FAILED':
+                return 'Hủy đơn';
+            case 'PENDING':
+                return 'Đang chờ';
+            case 'SUCCESS':
+                return 'Thành công';
+            default:
+                return status;
         }
     };
 
@@ -95,9 +107,9 @@ const ReviewOrder = () => {
                                                 </div>
                                             </div>
                                             <div className="purchase__tourName"><i className="ri-map-pin-2-fill"></i>Địa chỉ giao hàng: <span>{transaction.address}</span></div>
-                                            <div className="purchase__payment-status" >
-                                                <p style={{ backgroundColor: transaction.payment.status === 'FAILED' ? 'red' : 'blue' }}>Trạng thái thanh toán: {transaction.payment.status}</p>
-                                                <p>Phương thức thanh toán: {transaction.paymentMethod}</p>
+                                            <div className="purchase__payment-status">
+                                                <p style={{ backgroundColor: transaction.payment.status === 'FAILED' ? '#E4002B' : '#696969' }}>Trạng thái thanh toán: {getPaymentStatusLabel(transaction.payment.status)}</p>
+                                                <p>Phương thức thanh toán: {transaction.paymentMethod === 'CASH' ? 'Tiền mặt' : 'VNPAY'}</p>
                                             </div>
                                             <div className="purchase-right-content">
                                                 <div className="purchase__totalAmount">{transaction.totalAmount.toLocaleString()} VND</div>

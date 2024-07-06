@@ -22,7 +22,7 @@ const CategoryPage = () => {
         const fetchCategoryById = async () => {
             try {
                 const response = await axios.get(`${BASE_URL}/product/get-product-by-category/${categoryId}`);
-                console.log(response.data.products);
+                // console.log(response.data.products);
                 setProducts(response.data.products);
                 setLoading(false);
             } catch (error) {
